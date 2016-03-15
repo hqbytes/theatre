@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Theatre Homepage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Theatre Homepage">
+		<meta name="author" content="Bola oduwole">
+		<!--Main Bootstrap styling-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!--Custom styling-->
+		<link rel="stylesheet" href="css/style.css">
+		<!--Iconic font - FontAwesome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!--Google font-->
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:200,400'>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+	<!--start navigation-->
+		<div class="navbar" role="navigation">
+
+			<div class="container">
+			<div class="col-lg-3 logo" data-start="padding: 15px 0px;" data-200="padding: 0px 0px;">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#intro" class="navbar-brand"><img class="img-responsive" src="img/logo.png" alt=""></a>
+			</div>
+
+			<div class="col-lg-9 topmenu">
+				<div class="row topone">
+					<div class="col-lg-4 box-office">
+						<div class="box-text">Box Office: <span class="basecolor">0844 848 2700</span></div>
+					</div>
+					<div class="col-lg-8 nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav pull-right">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Basket</a></li>
+							<li><a href="#">About us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row 2">
+					<div class="col-lg-4 booknow">
+							<button type="button" class="btn btn-book">Book Tickets Online</button>
+					</div>											
+		           <div id="custom-search-input" class="col-lg-8  search">
+		           		<div class="search-query">
+	                        <input type="text" class="searchbox form-control" placeholder="Search" />
+	                    </div>
+		            </div>
+				</div>
+			</div>
+</div>
+
+			
+
+<!--real menu-->
+			<div class="container">
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav pull-left">
+						<li><a href="#intro">Whats On</a></li>
+						<li><a href="#services">Your visit</a></li>
+						<li><a href="#first-header">Venues</a></li>
+						<li><a href="#second">Join in</a></li>
+						<li><a href="#third-header">About us</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	<!--end navigation-->
+	<!--start intro section-->
+		<section id="intro">
+				<div class="headerbg">
+					<img src="img/headers/bg.jpg">
+				</div>
+		</section>
+	<!--end intro section-->
+	<div class="container">
+
+	<!--start ticketing section-->
+		<section id="ticketing">
+			<div class="container">
+				<div class="row">
+
+					
+					<div class="col-lg-6 ticket left">
+						<div class="col-lg-12">
+						<h3 class="basecolor"><i class="fa fa-ticket"><span class="space">Tickets</span></i></h3>
+						</div>
+						<div class="col-lg-12 margin">
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									  <label>1. Select Show</label>
+									  <select class="form-control" id="show">
+									  </select>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									  <label>2. Select month</label>
+									  <select class="form-control" id="month">
+									  </select>
+								</div>
+							</div>	
+						</div>
+
+						<div class="col-lg-12 margin">
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+									  <label>3. How many tickets?</label>
+									  <select class="form-control" id="quantity">
+									  </select>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="form-group">
+ 								<button type="button" class="find-btn btn">FIND TICKETS</button>
+ 								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-lg-6 ticket">
+						<div class="col-lg-12">
+						<h3 class="basecolor"><i class="fa fa-calendar"><span class="space">Search by date</span></i></h3>
+						</div>						
+						<div class="col-lg-12">
+							<label>Event dates</label>
+						</div>
+						<div class="col-lg-12  margin">						
+							<div class="col-lg-6 col-sm-6">
+					            <div class="form-group">
+					                <div class='input-group date' id='datetimepicker1'>
+					                    <input type='text' class="form-control" />
+					                    <span class="input-group-addon">
+					                        <span class="fa fa-calendar"></span>
+					                    </span>
+					                </div>
+					            </div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+					            <div class="form-group">
+					                <div class='input-group date' id='datetimepicker1'>
+					                    <input type='text' class="form-control" />
+					                    <span class="input-group-addon">
+					                        <span class="fa fa-calendar"></span>
+					                    </span>
+					                </div>
+					            </div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="top">
+							<p>Box Office: <span class="basecolor">0844 848 2700</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--end ticketing section-->
+
+
+
+
+
+
+
+	<!--start featuredevents section-->
+		<section id="featuredevents">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>Featured events</h3>
+					</div>
+					<div class="col-lg-12 febg">
+						<div class="col-lg-2">
+							<p>Availabilty</p>
+						</div>
+						<div class="col-lg-10">
+							<span class="basecolor"><i class="fa fa-pie-chart"></i>Excellent</span>
+							<span class="basecolor"><i class="fa fa-pie-chart"></i>Good</span>
+							<span class="basecolor"><i class="fa fa-pie-chart"></i>Limited</span>
+							<span class="basecolor"><i class="fa fa-circle-o"></i>Restricted View only, please call Box Office</span>
+							<span class="basecolor"><i class="fa fa-pie-chart"></i>Unavailable</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--end featuredevents section-->
+	<!--start details section-->
+		<section id="details">
+			<div class="container">
+				<div class="row">
+
+						<div class="col-lg-3 col-sm-3 margin-details">
+								<div class="genre">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/cosifantute.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">Cosi Fan Tutte</h2>
+									<h6>June 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">It starts with a casual bet. The wily old cynic Don Alfonso</span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-3 col-sm-3 margin-details">
+								<div class="genre">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/damore.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">L'elisir D'amore</h2>
+									<h6>January 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">The male 'cinderella' tale of nemorino, ineffectual but ...</span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-3 col-sm-3 margin-details">
+								<div class="genre">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/paddy.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">Daddy Mcguinness</h2>
+									<h6>February 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">One of the country's best loved and popular ...</span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-3 col-sm-3 margin-details">
+								<div class="genre">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/chenier.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">Andrea Chenier</h2>
+									<h6>June 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">Based on the life of the French poet Andre' Chenier and set ...</span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>				
+
+
+			</div>
+
+			<div class="row">
+						<div class="col-lg-6 col-sm-6 margin-details">
+								<div class="genre">									  	
+									<div class="genre-image-thumb">
+										<img alt="cosifantute" src="img/home/pasha-kovalev.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">Pasha Kovalev</h2>
+									<h6>April 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">After his successful UKTour, Life Through Dance, Pasha Kovalev, the winner of Strictly Come Dancing 2014, welcomes you to his new ... </span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 margin-details">
+								<div class="genre">									  	
+									<div class="genre-image-thumb">
+										<img alt="cosifantute" src="img/home/sean-lock.jpg">	
+									</div>
+									<div class="genre-text">            
+									<h2 class="genre-name">Sean Lock</h2>
+									<h6>February 2016</h6>																	
+										<div class="genre-box">
+								           <span id="genre-text-1" class="genre-regular">
+								            	<span class="genre-excerpt">Every three years the comedian Sean Lock writes nad tours a new stand-up show. Well he's only gone and done it again!</span><!--add ellipsis-->
+								        	</span>
+										</div>									
+										<div class="booknow">
+			 								<button type="button" class="btn btn-book">Book</button>
+
+								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-12 col-sm-12 margin-details seemore">
+			 				<button type="button" class="btn btn-seemore">See more</button>
+						</div>
+				</div>
+
+		</div>
+		</section>
+	<!--end details section-->
+
+
+	<!--start details section-->
+		<section id="bottom">
+			<div class="container">
+				<div class="row bottom">
+
+						<div class="col-lg-4 col-sm-4 margin">
+								<div class="genre-bottoms">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/membership-club.jpg">	
+									</div>																
+									<div class="genre-text">            
+										<div class="genre-box">
+								           <p>Ensure you're always at the front of the queue with our new Priority Memberships. Choose from 2 membership levels to get advance notice of what's coming, priority booking periods plus the optional added benefits of ticket discounts.</p><!--add ellipsis-->
+										</div>									
+										<div class="readmore">
+			 								<button type="button" class="btn btn-default">Read more</button>
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-4 col-sm-4 margin">
+								<div class="genre-bottoms">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/gift-vouchers.jpg">	
+									</div>																
+									<div class="genre-text">            
+										<div class="genre-box">
+								           <p>Our gift vouchers make the perfect gift for that hard to buy for person. Valid at both Leeds Grand Theatre and City Varieties they can be redeemed online, on the telephone or in person and expire one year after purchase.</p><!--add ellipsis-->
+										</div>									
+										<div class="readmore">
+			 								<button type="button" class="btn btn-default">Read more</button>
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col-lg-4 col-sm-4 margin">
+								<div class="genre-bottoms">									  	
+									<div class="image  genre-image-thumb">
+										<img alt="cosifantute" src="img/home/theatre-focus.jpg">	
+									</div>																
+									<div class="genre-text">            
+										<div class="genre-box">
+								           <p>Discover the rich history of Leeds' theatres on one our public tours. Tours of the Grand Theatre explore its history from opening night to its success today.</p><!--add ellipsis-->
+								        	
+										</div>									
+										<div class="readmore">
+			 								<button type="button" class="btn btn-default">Read more</button>
+										</div>
+									</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		</section>
+	<!--end details section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--start footer section-->
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-6 margin copy">
+						<p>2013 &copy; Awerest - interactive studio</p>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-offset-2 margin social">
+						<a class="facebook" href="http://www.facebook.com/" target="_blank">Facebook</a> / 
+						<a class="twitter" href="http://www.twitter.com/" target="_blank">Twitter</a> / 
+						<a class="google" href="https://plus.google.com/" target="_blank">Google+</a> / 
+						<a class="instagram" href="http://" target="_blank">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--end footer section-->
+	<!--start back to top button-->
+		<a href="#intro" class="hidden-sm go-top" data-0="opacity: 0;" data-1000="opacity: 1;">Go Top</a>
+	</div>
+	<!--end back to top button-->
+	<!--start scripts - IMPORTANT: all scripts MUST be loaded after jquery-latest.js as now-->
+	<!--latest jQuery-->
+	<!--enable responsive features in IE8-->
+	<!--[if lte IE 8]>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<!--retina support-->
+
+	<!--google analytics
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'Your Google Analytics Code']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>-->
+	<!--custom script-->
+	    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+		<script src="js/bootstrap-datetimepicker.js"></script>
+	<!--end scripts-->
+	</body>
+</html>
