@@ -4,15 +4,13 @@
 		<title>Theatre Homepage</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="description" content="Theatre Homepage">
-		<meta name="author" content="Bola oduwole">
+		<meta name="author" content="Bola rinwa oduwole">
 		<!--Main Bootstrap styling-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!--Custom styling-->
 		<link rel="stylesheet" href="css/style.css">
 		<!--Iconic font - FontAwesome-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<!--Google font-->
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:200,400'>
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
@@ -21,19 +19,19 @@
 	<body>
 
 	<!--start navigation-->
-		<div class="navbar" role="navigation">
+		<div class="navbar nomarginnav" role="navigation" id="start">
 
-			<div class="container">
-			<div class="col-lg-3 logo" data-start="padding: 15px 0px;" data-200="padding: 0px 0px;">
+			<div class="container nav-flex-container">
+			<div class="col-lg-3 logo nav-flex-item"  data-start="padding: 15px 0px;" data-200="padding: 0px 0px;">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#intro" class="navbar-brand"><img class="img-responsive" src="img/logo.png" alt=""></a>
+				<a href="#start" class="navbar-brand"><img class="img-responsive" src="img/logo.png" alt=""></a>
 			</div>
 
-			<div class="col-lg-9 topmenu">
+			<div class="col-lg-9 topmenu nav-flex-item">
 				<div class="row topone">
 					<div class="col-lg-4 box-office">
 						<div class="box-text">Box Office: <span class="basecolor">0844 848 2700</span></div>
@@ -43,8 +41,8 @@
 							<li><a href="#">My Account</a></li>
 							<li><a href="#">Gift Vouchers</a></li>
 							<li><a href="#">Help</a></li>
-							<li><a href="#">Basket</a></li>
-							<li><a href="#">About us</a></li>
+							<li class="pipe">|</li>
+							<li><a class="cart" href="#">Basket</a></li>
 						</ul>
 					</div>
 				</div>
@@ -64,15 +62,17 @@
 			
 
 <!--real menu-->
-			<div class="container">
-				<div class="nav-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav pull-left">
-						<li><a href="#intro">Whats On</a></li>
-						<li><a href="#services">Your visit</a></li>
-						<li><a href="#first-header">Venues</a></li>
-						<li><a href="#second">Join in</a></li>
-						<li><a href="#third-header">About us</a></li>
-					</ul>
+			<div class="row navborder">
+				<div class="container"> 
+					<div class="nav-collapse collapse navbar-responsive-collapse navcenter">
+						<ul class="nav navbar-nav mynav">
+							<li><a href="#">Whats On</a></li>
+							<li><a href="#">Your visit</a></li>
+							<li><a href="#">Venues</a></li>
+							<li><a href="#">Join in</a></li>
+							<li><a href="#">About us</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -80,9 +80,7 @@
 	<!--end navigation-->
 	<!--start intro section-->
 		<section id="intro">
-				<div class="headerbg">
-					<img src="img/headers/bg.jpg">
-				</div>
+			<header></header>
 		</section>
 	<!--end intro section-->
 	<div class="container">
@@ -172,41 +170,33 @@
 		</section>
 	<!--end ticketing section-->
 
-
-
-
-
-
-
-	<!--start featuredevents section-->
-		<section id="featuredevents">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h3>Featured events</h3>
-					</div>
-					<div class="col-lg-12 febg">
-						<div class="col-lg-2">
-							<p>Availabilty</p>
-						</div>
-						<div class="col-lg-10">
-							<span class="basecolor"><i class="fa fa-pie-chart"></i>Excellent</span>
-							<span class="basecolor"><i class="fa fa-pie-chart"></i>Good</span>
-							<span class="basecolor"><i class="fa fa-pie-chart"></i>Limited</span>
-							<span class="basecolor"><i class="fa fa-circle-o"></i>Restricted View only, please call Box Office</span>
-							<span class="basecolor"><i class="fa fa-pie-chart"></i>Unavailable</span>
-						</div>
-					</div>
-				</div>
-			</div>
 		</section>
-	<!--end featuredevents section-->
 	<!--start details section-->
 		<section id="details">
 			<div class="container">
 				<div class="row">
+						<div class="col-lg-12 featured">
+							<h3>Featured Events</h3>
+						</div>
+						<div class="col-lg-12 febgdiv">
+							<div class="col-lg-2 febg febgone">
+								<span>Availabilty</span>
+							</div>
+							<div class="col-lg-10 febg">
+								<span class="icontext excel"><img src="img/icons/full.png">Excellent</span>
+								<span class="icontext"><img src="img/icons/twothird.png">Good</span>
+								<span class="icontext"><img src="img/icons/onethird.png">Limited</span>
+								<span class="icontext boxrestrict"><img src="img/icons/circle.png">Restricted View only, please call Box Office</span>
+								<span class="icontext excel"><img src="img/icons/cancel.png">Unavailable</span>
+							</div>
+						</div>
+				</div>
+				<div class="row rowtop">
 
 						<div class="col-lg-3 col-sm-3 margin-details">
+								<div>
+				 					<button type="button" class="btn btn-genre">Opera</button>								
+								</div>								
 								<div class="genre">									  	
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/cosifantute.jpg">	
@@ -216,18 +206,21 @@
 									<h6>June 2016</h6>																	
 										<div class="genre-box">
 								           <span id="genre-text-1" class="genre-regular">
-								            	<span class="genre-excerpt">It starts with a casual bet. The wily old cynic Don Alfonso</span><!--add ellipsis-->
+								            	<span class="genre-excerpt">It starts with a casual bet. The wily old cynic Don Alfonso ...</span><!--add ellipsis-->
 								        	</span>
 										</div>									
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/twothird.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
 						</div>
 						<div class="col-lg-3 col-sm-3 margin-details">
+								<div>
+				 					<button type="button" class="btn btn-genre">Opera</button>								
+								</div>
 								<div class="genre">									  	
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/damore.jpg">	
@@ -243,13 +236,16 @@
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/full.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
 						</div>
 						<div class="col-lg-3 col-sm-3 margin-details">
-								<div class="genre">									  	
+                                <div>
+                                    <button type="button" class="btn btn-genre">Comedy</button>                               
+                                </div>																	  	
+								<div class="genre">
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/paddy.jpg">	
 									</div>
@@ -264,13 +260,16 @@
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/onethird.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
 						</div>
 						<div class="col-lg-3 col-sm-3 margin-details">
-								<div class="genre">									  	
+                                <div>
+                                    <button type="button" class="btn btn-genre">Talk</button>                               
+                                </div>																	  	
+								<div class="genre">
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/chenier.jpg">	
 									</div>
@@ -285,7 +284,7 @@
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/twothird.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
@@ -294,8 +293,11 @@
 
 			</div>
 
-			<div class="row">
+			<div class="row rowtop">
 						<div class="col-lg-6 col-sm-6 margin-details">
+                                <div>
+                                    <button type="button" class="btn btn-genre">Dance</button>                               
+                                </div>							
 								<div class="genre">									  	
 									<div class="genre-image-thumb">
 										<img alt="cosifantute" src="img/home/pasha-kovalev.jpg">	
@@ -311,12 +313,15 @@
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/twothird.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
 						</div>
 						<div class="col-lg-6 col-sm-6 margin-details">
+							    <div>
+                                    <button type="button" class="btn btn-genre">Comedy</button>                               
+                                </div>
 								<div class="genre">									  	
 									<div class="genre-image-thumb">
 										<img alt="cosifantute" src="img/home/sean-lock.jpg">	
@@ -332,7 +337,7 @@
 										<div class="booknow">
 			 								<button type="button" class="btn btn-book">Book</button>
 
-								            <span class="basecolor pie"><i class="fa fa-pie-chart"></i></span><!--add ellipsis-->
+								            <span class="basecolor pie"><img src="img/icons/onethird.png"></span><!--add ellipsis-->
 										</div>
 									</div>
 								</div>
@@ -347,12 +352,12 @@
 	<!--end details section-->
 
 
-	<!--start details section-->
+	<!--start bottom section-->
 		<section id="bottom">
 			<div class="container">
-				<div class="row bottom">
+				<div class="row bottom flex-container">
 
-						<div class="col-lg-4 col-sm-4 margin">
+						<div class="col-lg-4 col-sm-4 margin flex-item">
 								<div class="genre-bottoms">									  	
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/membership-club.jpg">	
@@ -362,12 +367,12 @@
 								           <p>Ensure you're always at the front of the queue with our new Priority Memberships. Choose from 2 membership levels to get advance notice of what's coming, priority booking periods plus the optional added benefits of ticket discounts.</p><!--add ellipsis-->
 										</div>									
 										<div class="readmore">
-			 								<button type="button" class="btn btn-default">Read more</button>
+			 								<button type="button" class="btn btn-readmore">Read more</button>
 										</div>
 									</div>
 								</div>
 						</div>
-						<div class="col-lg-4 col-sm-4 margin">
+						<div class="col-lg-4 col-sm-4 margin flex-item">
 								<div class="genre-bottoms">									  	
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/gift-vouchers.jpg">	
@@ -377,12 +382,12 @@
 								           <p>Our gift vouchers make the perfect gift for that hard to buy for person. Valid at both Leeds Grand Theatre and City Varieties they can be redeemed online, on the telephone or in person and expire one year after purchase.</p><!--add ellipsis-->
 										</div>									
 										<div class="readmore">
-			 								<button type="button" class="btn btn-default">Read more</button>
+			 								<button type="button" class="btn btn-readmore">Read more</button>
 										</div>
 									</div>
 								</div>
 						</div>
-						<div class="col-lg-4 col-sm-4 margin">
+						<div class="col-lg-4 col-sm-4 margin flex-item">
 								<div class="genre-bottoms">									  	
 									<div class="image  genre-image-thumb">
 										<img alt="cosifantute" src="img/home/theatre-focus.jpg">	
@@ -393,7 +398,7 @@
 								        	
 										</div>									
 										<div class="readmore">
-			 								<button type="button" class="btn btn-default">Read more</button>
+			 								<button type="button" class="btn btn-readmore">Read more</button>
 										</div>
 									</div>
 								</div>
@@ -401,64 +406,49 @@
 				</div>
 		</div>
 		</section>
-	<!--end details section-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<!--end bottom section-->
+	</div>
 
 	<!--start footer section-->
 		<section id="footer">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-sm-6 margin copy">
-						<p>2013 &copy; Awerest - interactive studio</p>
+				<div class="row footerow footerow-flex-container">
+					<div class="col-lg-6 col-sm-6 copy footerow-flex-item">
+						<a href="#intro" class="navbar-brand"><img class="img-responsive" src="img/logo.png" alt=""></a>
+					</div>	
+					<div class="col-lg-6 col-sm-6 social footerow-flex-item">
+						<p>Follow us | 
+							<a href="" target="_blank"><i class="fa fa-facebook-official fa-2"></i></a>
+							<a href="" target="_blank"><i class="fa fa-twitter"></i></a> 
+							<a href="" target="_blank"><i class="fa fa-rss"></i></a> 
+							<a href="" target="_blank"><i class="fa fa-envelope"></i></a>							
+
+						</p>
 					</div>
-					<div class="col-lg-4 col-sm-6 col-offset-2 margin social">
-						<a class="facebook" href="http://www.facebook.com/" target="_blank">Facebook</a> / 
-						<a class="twitter" href="http://www.twitter.com/" target="_blank">Twitter</a> / 
-						<a class="google" href="https://plus.google.com/" target="_blank">Google+</a> / 
-						<a class="instagram" href="http://" target="_blank">Instagram</a>
-					</div>
+				</div>
+				<div class="row footerow-bottom flast-flex-container">
+
+				<div class="col-lg-4 flast-flex-item narrow">
+						<p>Proprietor: Leeds Grand Theatre and Opera House Ltd.(978161)<br/>A company controlled by Leeds City Council.</p>
+						<p class="pspace">Registered Educational Charity No 500408</p>
+						<p>Terms and Conditions and Privacy</p>
+				</div>
+				<div class="col-lg-4 flast-flex-item footer-narrow nopad">
+						<p>Box Office <strong>0844 848 2700</strong></p>
+						<p>46 New Briggate, Leeds LS1 6NZ</p>
+						<p>Mail to:BOXOFFICE@LEEDSGRANDTHEATRE.COM</p>
+				</div>
+				<div class="col-lg-4 flast-flex-item footerlogos-cols">
+					<div class="grange">
+						<div class="col-lg-4 genre-image-thumb footerlogos-cols"><a title="" href="#"><img src="img/footers/leeds-city-council-logo.png" /></a></div>
+						<div class="col-lg-4 genre-image-thumb footerlogos-cols"><a title="" href="#"><img src="img/footers/hyde-park-logo.png" /></a></div>
+						<div class="col-lg-4 genre-image-thumb footerlogos-cols"><a title="" href="#"><img src="img/footers/city-varieties-logo.png" /></a></div>
+					</div>					
+				</div>
 				</div>
 			</div>
 		</section>
 	<!--end footer section-->
-	<!--start back to top button-->
-		<a href="#intro" class="hidden-sm go-top" data-0="opacity: 0;" data-1000="opacity: 1;">Go Top</a>
-	</div>
-	<!--end back to top button-->
-	<!--start scripts - IMPORTANT: all scripts MUST be loaded after jquery-latest.js as now-->
-	<!--latest jQuery-->
-	<!--enable responsive features in IE8-->
-	<!--[if lte IE 8]>
-		<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<!--retina support-->
-
-	<!--google analytics
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'Your Google Analytics Code']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>-->
 	<!--custom script-->
 	    <script type="text/javascript">
             $(function () {
