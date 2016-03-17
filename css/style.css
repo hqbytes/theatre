@@ -930,6 +930,55 @@ header {
  
 }
 @media (min-width 320px) and (max-width 479px) {
+header {
+    background-size: 150% auto;
+}
+.navbar-toggle {
+    left: 240px;
+}
+.nav-flex-container {
+    display: block;
+}
+.footerow-flex-container {
+    display: block;
+}
+
+.flast-flex-container {
+    display: block;
+}
+.flex-container {
+    display: block;
+}
+.genre-text {
+	height: 100%;
+}
+#details {
+    padding: 0px 0px 50px;
+}
+.febgdiv {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.search-query {
+    padding: 8px 0px 8px 8px;
+}
+.btn-book {
+    padding: 8px 50px;
+}
+.febgone {
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+.excel{
+    margin-left: 0px;
+}
+.boxrestrict{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.icontext {
+    margin-right: 10px;
+}
 
 }	
 @media (min-width: 480px) and (max-width: 767px) {
